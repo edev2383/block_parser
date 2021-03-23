@@ -1,0 +1,81 @@
+{
+    "blocks": {
+        "115866165808179464918888528563843672372": {
+            "blocks": {},
+            "compound": true,
+            "hash": "115866165808179464918888528563843672372",
+            "item": "item",
+            "key": "simpleArray",
+            "length": 3,
+            "string": "39    <div>Aliens {item}</div>",
+            "type": "foreach"
+        },
+        "170767859123596024959208320848254736519": {
+            "blocks": {},
+            "hash": "170767859123596024959208320848254736519",
+            "key": "fruit",
+            "length": 3,
+            "operator": "==",
+            "string_if_false": "",
+            "string_if_true": "17      <li>Testing if first if is true</li>",
+            "type": "if",
+            "value": "banana",
+            "value_type": "string"
+        },
+        "181301797120964758807348599107273965865": {
+            "blocks": {},
+            "hash": "181301797120964758807348599107273965865",
+            "key": "secondif",
+            "length": 5,
+            "operator": "==",
+            "string_if_false": "\r\n23      <li>secondif was falsae</li>",
+            "string_if_true": "21      <li>secondif was true</li>\r\n22      ",
+            "type": "if",
+            "value": "true",
+            "value_type": "boolean"
+        },
+        "281749299556197202486097781523916003779": {
+            "blocks": {
+                "317629648837919222991521308904823647835": {
+                    "blocks": {},
+                    "hash": "317629648837919222991521308904823647835",
+                    "key": "!someNestedVar",
+                    "length": 5,
+                    "operator": "==",
+                    "string_if_false": "\r\n32    <p>The nested var was false {test_false}</p>",
+                    "string_if_true": "30    <p>The nested var was true</p>\r\n31    ",
+                    "type": "if",
+                    "value": "false",
+                    "value_type": "boolean"
+                }
+            },
+            "compound": false,
+            "hash": "281749299556197202486097781523916003779",
+            "item": null,
+            "key": "exampleNestedForIf",
+            "length": 11,
+            "string": "27    <p>some test for something nested...</p>\r\n28    <!--  -->\r\n{317629648837919222991521308904823647835}\r\n34    <!--  -->\r\n35    <p>some test for something nested...</p>",
+            "type": "foreach"
+        },
+        "8246600672050772811690805839876166990": {
+            "blocks": {},
+            "compound": false,
+            "hash": "8246600672050772811690805839876166990",
+            "item": null,
+            "key": "exampleVar",
+            "length": 3,
+            "string": "12    <p>{id} {name}</p>",
+            "type": "foreach"
+        }
+    },
+    "hash": "326267207000752771398557581531892075224",
+    "includes": [
+        {
+            "hash": "199419552972872298007781649588452012054",
+            "key": "style_header"
+        }
+    ],
+    "length": 42,
+    "string": "1<!DOCTYPE html>\r\n2<html lang=\"en\">\r\n3  <head>\r\n4    <meta charset=\"UTF-8\" />\r\n5    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n6    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n7    <title>Testing</title>\r\n{199419552972872298007781649588452012054}\r\n9  </head>\r\n10  <body>\r\n{8246600672050772811690805839876166990}\r\n14    <ul>\r\n15      <li>Testing an if statement</li>\r\n{170767859123596024959208320848254736519}\r\n19      <li>--------------------</li>\r\n{181301797120964758807348599107273965865}\r\n25    </ul>\r\n{281749299556197202486097781523916003779}\r\n37    <p>Testing another P TAG</p>\r\n{115866165808179464918888528563843672372}\r\n41  </body>\r\n42</html>",
+    "type": null
+}

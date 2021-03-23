@@ -1,0 +1,42 @@
+1<!DOCTYPE html>
+2<html lang="en">
+3  <head>
+4    <meta charset="UTF-8" />
+5    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+6    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+7    <title>Testing</title>
+8    @include(style_header)
+9  </head>
+10  <body>
+11    @foreach (exampleVar)
+12    <p>{id} {name}</p>
+13    @endforeach
+14    <ul>
+15      <li>Testing an if statement</li>
+16      @if (fruit == "banana")
+17      <li>Testing if first if is true</li>
+18      @endif
+19      <li>--------------------</li>
+20      @if (secondif == true)
+21      <li>secondif was true</li>
+22      @else
+23      <li>secondif was falsae</li>
+24      @endif
+25    </ul>
+26    @foreach (exampleNestedForIf)
+27    <p>some test for something nested...</p>
+28    <!--  -->
+29    @if (!someNestedVar)
+30    <p>The nested var was true</p>
+31    @else
+32    <p>The nested var was false {test_false}</p>
+33    @endif
+34    <!--  -->
+35    <p>some test for something nested...</p>
+36    @endforeach
+37    <p>Testing another P TAG</p>
+38    @foreach (item in simpleArray)
+39    <div>Aliens {item}</div>
+40    @endforeach
+41  </body>
+42</html>
